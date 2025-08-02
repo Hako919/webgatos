@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web - App de Gatos</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐱 APP DE GATOS 🐱</h1>
+      
+      <div class="card">
+        <h2>¡Bienvenido a la mejor app de gatos!</h2>
+        
+        <div class="button-container">
+          <button onclick="mostrarGato()">Ver Gato Aleatorio</button>
+          <button onclick="mostrarDato()">Dato Curioso</button>
+          <button onclick="cambiarColor()">Cambiar Color</button>
+        </div>
+
+        <div class="counter">
+          <p>Gatos vistos: <span id="contador">0</span></p>
+        </div>
+
+        <div class="cat-container">
+          <img id="gatoImagen" class="cat-image" alt="Imagen de gato">
+        </div>
+
+        <div class="fun-facts">
+          <h3>💡 Datos Curiosos sobre Gatos:</h3>
+          <div id="datosCuriosos"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
